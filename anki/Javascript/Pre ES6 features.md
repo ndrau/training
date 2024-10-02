@@ -194,3 +194,17 @@ Animal.prototype.speak = function () {
 const dog = new Animal('Dog');
 console.log(dog.speak()); // Dog makes a noise.
 ```
+
+## 16. Falsy and Truthy Values
+
+Understanding truthy and falsy values:
+
+```js
+console.log(Boolean(0)); // false
+console.log(Boolean('')); // false
+console.log(Boolean(null)); // false
+console.log(Boolean(undefined)); // false
+console.log(Boolean(NaN)); // false
+console.log(Boolean(false)); // false
+console.log(Boolean(true)); // true
+```
