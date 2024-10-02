@@ -1,4 +1,3 @@
-
 # Important JavaScript Features (Post-ES6)
 
 ## 1. Async/Await
@@ -38,7 +37,7 @@ const flatArray = nestedArray.flat(2); // [1, 2, 3]
 - **Array.prototype.flatMap()**
 
 ```js
-const mappedArray = arr.flatMap(x => [x * 2]); // [2, 4, 6]
+const mappedArray = arr.flatMap((x) => [x * 2]); // [2, 4, 6]
 ```
 
 ## 3. Object.entries() and Object.values()
@@ -116,7 +115,7 @@ A method that returns a promise that resolves when all promises have settled:
 
 ```js
 const promises = [Promise.resolve(1), Promise.reject('error')];
-Promise.allSettled(promises).then(results => {
+Promise.allSettled(promises).then((results) => {
   console.log(results); // [{status: 'fulfilled', value: 1}, {status: 'rejected', reason: 'error'}]
 });
 ```
@@ -144,7 +143,7 @@ A method that resolves as soon as one of the promises in the iterable fulfills:
 
 ```js
 const promises = [Promise.reject('error'), Promise.resolve(3)];
-Promise.any(promises).then(value => {
+Promise.any(promises).then((value) => {
   console.log(value); // 3
 });
 ```
@@ -169,4 +168,3 @@ x ||= 2; // x = x || 2
 x &&= 2; // x = x && 2
 x ??= 2; // x = x ?? 2
 ```
-

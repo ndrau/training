@@ -1,4 +1,3 @@
-
 # ES6 Features
 
 ## 1. Let and Const
@@ -16,7 +15,7 @@ Shorter syntax for writing functions:
 
 ```js
 const add = (a, b) => a + b;
-const square = x => x * x;
+const square = (x) => x * x;
 ```
 
 ## 3. Template Literals
@@ -73,7 +72,7 @@ class Animal {
   constructor(name) {
     this.name = name;
   }
-  
+
   speak() {
     return `${this.name} makes a noise.`;
   }
